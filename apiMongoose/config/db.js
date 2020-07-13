@@ -15,7 +15,6 @@ let connection,
         if (connection) return connection
 
         try {
-            //`mongodb://${ HOST_DB}/${NAME_DB}`
             connection = await mongoose.connect(`${mongoUrl}`, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,

@@ -8,4 +8,4 @@ const RolModel = Schema({
   createAt: { type: Date },
 });
 
-module.exports = mongoose.model("Rol", RolModel);
+module.exports = mongoose.model("Roles", RolModel);

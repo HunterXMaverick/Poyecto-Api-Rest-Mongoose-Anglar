@@ -1,0 +1,53 @@
+<div class="leading-loose">
+    <form
+      class="max-w-xl m-4 p-10 bg-white rounded shadow-xl"
+      [formGroup]="createCourseForm"
+    >
+      <p class="text-gray-800 font-medium">Course information</p>
+      <div class="mt-2">
+        <label class="block text-sm">Titulo</label>
+        <input
+          class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
+          formControlName="titulo"
+          type="text"
+          placeholder="titulo"
+        />
+      </div>
+      <div class="mt-2">
+        <label class="block text-sm">Profesor</label>
+        <input
+          class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
+          formControlName="profesor"
+          type="text"
+          placeholder="Profesor name"
+        />
+      </div>
+      <div class="mt-2">
+        <label class="block text-sm">Description</label>
+        <input
+          class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
+          formControlName="description"
+          type="text"
+          placeholder="tu description"
+        />
+      </div>
+      <div class="mt-2">
+        <label class="block text-sm">Tema</label>
+        <input
+          class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded"
+          formControlName="tema"
+          type="text"
+          placeholder="tu tema"
+        />
+      </div>
+      <div class="mt-4">
+        <button
+          class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"
+          type="submit"
+          (click)="registerCourse()"
+        >
+          Grabar
+        </button>
+      </div>
+    </form>
+  </div>

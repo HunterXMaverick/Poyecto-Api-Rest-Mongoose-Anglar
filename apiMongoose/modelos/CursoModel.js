@@ -13,4 +13,4 @@ const CursoModel = Schema({
     createAt: { type: Date },
 })
 
-module.exports = mongoose.model('Curso', CursoModel)
+module.exports = mongoose.model('Cursos', CursoModel)
